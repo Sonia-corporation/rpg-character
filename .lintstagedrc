@@ -1,8 +1,8 @@
 {
-  "*.{ts,js}": [
-    "npm run lint:ts:hook"
+  "*.{ts,js,html}": [
+    "npm run affected:lint:all"
   ],
-  "*.{md,json,yml,html}": [
-    "npm run lint:other:hook"
+  "*.{md,json,yml}": [
+    "npm run format:write:all"
   ]
 }

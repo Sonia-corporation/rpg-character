@@ -5,3 +5,4 @@ dist-local-dev
 node_modules
 .eslintcache
 package-lock.json
+/.angular/cache

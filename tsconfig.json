@@ -8,10 +8,10 @@
     "noFallthroughCasesInSwitch": true,
     "strictNullChecks": true,
     "downlevelIteration": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "importHelpers": true,
-    "module": "CommonJS",
-    "outDir": "./dist",
+    "module": "esnext",
+    "outDir": ".",
     "sourceMap": true,
     "declaration": false,
     "moduleResolution": "node",
@@ -23,16 +23,13 @@
     "strict": true,
     "target": "es2015",
     "typeRoots": ["node_modules/@types", "node_modules/@types/", "types"],
-    "lib": ["es2018", "dom"],
+    "lib": ["es2017", "dom"],
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "isolatedModules": true,
-    "plugins": [
-      {
-        "transform": "ts-auto-mock/transformer",
-        "cacheBetweenTests": false,
-        "debug": false
-      }
-    ]
-  }
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "paths": {}
+  },
+  "exclude": ["node_modules", "tmp"]
 }
