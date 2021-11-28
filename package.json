@@ -1,5 +1,5 @@
 {
-  "name": "@sonia-corporation/stale",
+  "name": "@sonia-corporation/rpg-character",
   "version": "1.18.0",
   "author": {
     "email": "geoffrey.testelin@gmail.com",
@@ -13,8 +13,8 @@
       "url": "https://github.com/C0ZEN"
     }
   ],
-  "description": "A GitHub action to stale and close automatically your issues and pull requests.",
-  "homepage": "https://github.com/Sonia-corporation/stale",
+  "description": "Just a website to create an RPG character.",
+  "homepage": "https://github.com/Sonia-corporation/rpg-character",
   "maintainers": [
     {
       "email": "geoffrey.testelin@gmail.com",
@@ -24,16 +24,14 @@
   ],
   "license": "MIT",
   "keywords": [
-    "github",
-    "action",
-    "stale"
+    "rpg"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Sonia-corporation/stale.git"
+    "url": "https://github.com/Sonia-corporation/rpg-character.git"
   },
   "bugs": {
-    "url": "https://github.com/Sonia-corporation/stale/issues"
+    "url": "https://github.com/Sonia-corporation/rpg-character/issues"
   },
   "config": {
     "commitizen": {
@@ -58,16 +56,6 @@
     "\n# BUILD SCRIPTS:": "",
     "build": "npm run clean:dist && ncc build --license licenses.txt --minify",
     "build:dirty": "ncc build --license licenses.txt --minify",
-    "\n# TEST SCRIPTS:": "",
-    "test": "jest",
-    "test:watch": "jest --watch-all",
-    "test:watch:no-cache": "jest --watch-all --no-cache",
-    "test:leaks": "jest --detect-leaks",
-    "test:ci": "jest --bail=1 --ci",
-    "test:ci:coverage": "jest --collect-coverage --bail=1 --ci",
-    "test:ci:coverage:integration": "npm run test:ci:coverage -- tests",
-    "test:ci:coverage:unit": "npm run test:ci:coverage -- src",
-    "test:clear-cache": "jest --clear-cache",
     "\n# LINT SCRIPTS:": "",
     "lint:ts": "eslint --fix --fix-type suggestion,layout,problem --cache --cache-location .eslintcache --quiet **/*.{js,ts}",
     "lint:ts:ci": "eslint --quiet **/*.{js,ts}",
@@ -108,7 +96,6 @@
     "@semantic-release/github": "7.2.3",
     "@sonia-corporation/conventional-changelog": "1.0.1",
     "@types/faker": "5.5.9",
-    "@types/jest": "27.0.3",
     "@types/lodash": "4.14.177",
     "@types/luxon": "2.0.7",
     "@types/node": "14.17.34",
@@ -127,17 +114,12 @@
     "eslint-config-recommended": "4.1.0",
     "eslint-import-resolver-typescript": "2.5.0",
     "eslint-plugin-import": "2.25.3",
-    "eslint-plugin-jest": "25.2.4",
     "eslint-plugin-jsdoc": "37.0.3",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-progress": "0.0.1",
     "eslint-plugin-typescript-sort-keys": "2.0.0",
     "faker": "5.5.3",
     "husky": "7.0.4",
-    "jest": "27.3.1",
-    "jest-extended": "1.1.0",
-    "jest-silent-reporter": "0.5.0",
-    "jest-ts-auto-mock": "2.0.0",
     "lint-staged": "12.1.2",
     "node-notifier": "10.0.0",
     "prettier": "2.4.1",
@@ -145,7 +127,6 @@
     "semantic-release": "17.4.7",
     "shx": "0.3.3",
     "ts-auto-mock": "3.5.0",
-    "ts-jest": "27.0.7",
     "ts-node-dev": "1.1.8",
     "tsconfig-paths": "3.12.0",
     "ttypescript": "1.5.13",

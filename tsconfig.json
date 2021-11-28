@@ -33,12 +33,6 @@
         "cacheBetweenTests": false,
         "debug": false
       }
-    ],
-    "paths": {
-      "@core/*": ["src/core/*"],
-      "@github/*": ["src/github/*"],
-      "@utils/*": ["src/utils/*"],
-      "@tests/*": ["tests/*"]
-    }
+    ]
   }
 }

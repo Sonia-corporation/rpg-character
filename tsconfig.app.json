@@ -4,6 +4,5 @@
     "outDir": "../../out-tsc/app",
     "types": ["node"]
   },
-  "include": ["src", "scripts"],
-  "exclude": ["**.*.spec.ts", "jest", "**/__mocks__"]
+  "include": ["src", "scripts"]
 }
