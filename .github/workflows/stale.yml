@@ -13,10 +13,58 @@ jobs:
         uses: actions/checkout@v2
       - name: Stale
         id: stale
-        uses: sonia-corporation/stale@develop
+        uses: sonia-corporation/stale@1.25.1
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-stale-comment: |
+            [~dependency-fix]: https://img.shields.io/badge/-dependency%20fix-c44569.svg
+            [~help-wanted]: https://img.shields.io/badge/-help%20wanted-63cdda.svg
+            [~frozen]: https://img.shields.io/badge/-frozen-d6fffa.svg
+            [~dependencies]: https://img.shields.io/badge/-dependencies-1e3799.svg
+
+            :warning: **Warning!** :warning:
+
+            This issue was marked as stale due to a lack of activity for two months. :worried:
+            In one month this issue will be closed if there is no more activity during this period. :grimacing:
+
+            If you want to avoid this stale state you could add one of these labels:
+            - [![label: dependency-fix][~dependency-fix]](https://github.com/Sonia-corporation/rpg-character/labels/dependency-fix)
+            - [![label: help wanted][~help-wanted]](https://github.com/Sonia-corporation/rpg-character/labels/help%20wanted)
+            - [![label: frozen][~frozen]](https://github.com/Sonia-corporation/rpg-character/labels/frozen)
+            - [![label: dependencies][~dependencies]](https://github.com/Sonia-corporation/rpg-character/labels/dependencies)
+          pull-request-stale-comment: |
+            [~dependency-fix]: https://img.shields.io/badge/-dependency%20fix-c44569.svg
+            [~help-wanted]: https://img.shields.io/badge/-help%20wanted-63cdda.svg
+            [~frozen]: https://img.shields.io/badge/-frozen-d6fffa.svg
+            [~dependencies]: https://img.shields.io/badge/-dependencies-1e3799.svg
+
+            :warning: **Warning!** :warning:
+
+            This pull request was marked as stale due to a lack of activity for two months. :worried:
+            In one month this pull request will be closed if there is no more activity during this period. :grimacing:
+
+            If you want to avoid this stale state you could add one of these labels:
+            - [![label: dependency-fix][~dependency-fix]](https://github.com/Sonia-corporation/rpg-character/labels/dependency-fix)
+            - [![label: help wanted][~help-wanted]](https://github.com/Sonia-corporation/rpg-character/labels/help%20wanted)
+            - [![label: frozen][~frozen]](https://github.com/Sonia-corporation/rpg-character/labels/frozen)
+            - [![label: dependencies][~dependencies]](https://github.com/Sonia-corporation/rpg-character/labels/dependencies)
+          issue-stale-label: no-issue-activity
           issue-ignore-any-labels: |
             frozen
             help wanted
             dependency-fix
             dependencies
+          pull-request-stale-label: no-pull-request-activity
+          pull-request-ignore-any-labels: |
+            frozen
+            help wanted
+            dependency-fix
+            dependencies
+          issue-days-before-stale: 60
+          pull-request-days-before-stale: 60
+          issue-days-before-close: 30
+          pull-request-days-before-close: 30
+          issue-ignore-any-assignees: |
+            C0ZEN
+          pull-request-ignore-any-assignees: |
+            C0ZEN
