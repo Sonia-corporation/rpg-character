@@ -92,7 +92,7 @@
     "@angular/router": "13.0.2",
     "@nrwl/angular": "13.2.3",
     "rxjs": "6.6.0",
-    "tslib": "2.0.3",
+    "tslib": "2.4.0",
     "zone.js": "0.11.4"
   },
   "devDependencies": {
