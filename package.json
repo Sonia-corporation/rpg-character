@@ -124,7 +124,7 @@
     "husky": "7.0.4",
     "lint-staged": "12.1.2",
     "nx": "13.2.3",
-    "prettier": "2.4.1",
+    "prettier": "2.6.2",
     "semantic-release": "17.4.7",
     "shx": "0.3.3",
     "@angular-devkit/build-angular": "13.0.3",
