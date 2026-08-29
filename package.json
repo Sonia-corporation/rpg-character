@@ -80,7 +80,7 @@
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main"
   },
   "dependencies": {
-    "lodash": "4.17.21",
+    "lodash": "4.18.1",
     "luxon": "2.1.1",
     "@angular/animations": "13.0.2",
     "@angular/common": "13.0.2",
